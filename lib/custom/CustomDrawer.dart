@@ -93,22 +93,6 @@ class _CustomDrawerState extends State<CustomDrawer> {
             color: ColorsCoworking.buttomdrawerColor,
             child: ListTile(
               leading: Icon(
-                Icons.add_location,
-                color: ColorsCoworking.icondrawerColor,
-              ),
-              title: CustomText(
-                texto: 'Cadastro de sala',
-                cor: ColorsCoworking.textdrawerColor,
-              ),
-              onTap: () {
-                Get.put(CadSala);
-              },
-            ),
-          ),
-          Card(
-            color: ColorsCoworking.buttomdrawerColor,
-            child: ListTile(
-              leading: Icon(
                 Icons.room,
                 color: ColorsCoworking.icondrawerColor,
               ),
@@ -142,14 +126,15 @@ class _CustomDrawerState extends State<CustomDrawer> {
               color: ColorsCoworking.buttomdrawerColor,
               child: ListTile(
                 leading: Icon(
-                  Icons.settings,
+                  Icons.add_location,
                   color: ColorsCoworking.icondrawerColor,
                 ),
                 title: CustomText(
-                  texto: 'CMS',
+                  texto: 'Cadastro de sala',
                   cor: ColorsCoworking.textdrawerColor,
                 ),
                 onTap: () {
+                  Get.toNamed('/cadsala');
                 },
               ),
             ),

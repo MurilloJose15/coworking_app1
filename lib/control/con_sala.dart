@@ -8,12 +8,28 @@ class CtrlSala extends GetxController {
   var isLoading = true.obs;
 
   List<String> get Equipamentos => [
-        "obj_1",
-        "obj_2",
-        "obj_3",
-        "obj_4",
-        "obj_5",
+        "Televisão",
+        "Projetor",
+        "Lousa",
+        "Cine Sala",
+        "Ar-condicionado",
       ];
+
+
+  Future<List<Map<String, dynamic>>?> listarSalas() async {
+    try {
+      final QuerySnapshot<Map<String, dynamic>> querySnapshot =
+      await FirebaseFirestore.instance.collection('salas').get();
+
+      return querySnapshot.docs
+          .map((doc) => doc.data())
+          .toList(); // Retorna uma lista de Mapas (um mapa por sala)
+    } catch (e) {
+      print('Erro ao listar salas: $e');
+      return null;
+    }
+  }
+
 
   Future<void> cadSala(Sala sala) async {
     try {

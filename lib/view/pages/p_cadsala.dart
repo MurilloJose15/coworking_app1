@@ -192,10 +192,13 @@ class CadSala extends StatelessWidget {
     );
   }
 
+
+
   Widget _buildChips() {
     return Obx(() {
       return Wrap(
         spacing: 8.0,
+        runSpacing: 8.0,
         children: ctrlSala.Equipamentos.map((equipamento) {
           return _buildFilterChip(equipamento);
         }).toList(),

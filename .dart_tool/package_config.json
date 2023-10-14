@@ -170,6 +170,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "multi_select_flutter",
+      "rootUri": "file:///C:/Users/MURILLO-NOC/AppData/Local/Pub/Cache/hosted/pub.dev/multi_select_flutter-4.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///C:/Users/MURILLO-NOC/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
@@ -248,7 +254,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-10-05T22:28:09.068845Z",
+  "generated": "2023-10-14T00:57:48.987957Z",
   "generator": "pub",
   "generatorVersion": "3.1.3"
 }
